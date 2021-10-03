@@ -8,15 +8,20 @@ enum block_types {
 	yellow	
 }
 
-play_area = array_create(6, array_create(11));
+global.width = 10;
+global.iwidth = global.width - 1;
+global.height = 16;
+global.iheight = global.height -1;
+
+play_area = array_create(global.width, array_create(global.height));
 
 i = 0;
 j = 0;
-repeat(5) {
-	repeat(10) {
+repeat(global.width - 1) {
+	repeat(global.height - 1) {
 		obj = instance_create_layer(
-			((room_width / 2) - 48) +  (i * 16), 
-			((room_height / 2) - 64) + (j * 16), 
+			((room_width / 2) - ((global.width / 2) * 16)) +  (i * 16), 
+			((room_height / 2) - ((global.height / 2) * 16)) + (j * 16), 
 			"Instances",
 			obj_block);
 			
