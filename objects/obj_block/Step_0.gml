@@ -9,4 +9,5 @@ switch (colour) {
 	case block_types.yellow: sprite_index = spr_block_yellow; break;
 }
 
+// This is only here for safety
 checked = false;

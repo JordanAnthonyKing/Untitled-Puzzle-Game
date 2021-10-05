@@ -8,4 +8,5 @@ neighbour_right = {};
 
 x_index = 0;
 y_index = 0;
+
 checked = false;

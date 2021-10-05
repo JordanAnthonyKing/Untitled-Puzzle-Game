@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"spr_block_empty","path":"sprites/spr_block_empty/spr_block_empty.yy",},"order":7,},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"order":3,},
+    {"id":{"name":"scr_uncheck_neighbours","path":"scripts/scr_uncheck_neighbours/scr_uncheck_neighbours.yy",},"order":4,},
     {"id":{"name":"scr_pop_blocks","path":"scripts/scr_pop_blocks/scr_pop_blocks.yy",},"order":1,},
     {"id":{"name":"spr_block_green","path":"sprites/spr_block_green/spr_block_green.yy",},"order":2,},
     {"id":{"name":"scr_matching_neighbours","path":"scripts/scr_matching_neighbours/scr_matching_neighbours.yy",},"order":0,},
@@ -12,6 +13,7 @@
     {"id":{"name":"spr_block_red","path":"sprites/spr_block_red/spr_block_red.yy",},"order":1,},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":4,},
     {"id":{"name":"spr_block_yellow","path":"sprites/spr_block_yellow/spr_block_yellow.yy",},"order":3,},
+    {"id":{"name":"scr_swap_blocks","path":"scripts/scr_swap_blocks/scr_swap_blocks.yy",},"order":3,},
     {"id":{"name":"spr_block_purple","path":"sprites/spr_block_purple/spr_block_purple.yy",},"order":4,},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},"order":5,},
     {"id":{"name":"spr_block_pink","path":"sprites/spr_block_pink/spr_block_pink.yy",},"order":5,},
