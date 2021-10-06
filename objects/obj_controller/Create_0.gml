@@ -1,3 +1,4 @@
+// TODO: Move this to block create?
 enum block_types {
 	empty,
 	blue,

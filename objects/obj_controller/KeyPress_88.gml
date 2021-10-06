@@ -2,23 +2,26 @@
 var block = play_area[obj_cursor.x_index][obj_cursor.y_index];
 
 // move blocks
-var range = scr_scan_right(block, block.colour);
-if (range > 1) {
-	scr_swap_right(block, range);
+var range;
+if (obj_cursor.axis == cursor_axis.horizontal) {
+	range = scr_scan_right(block, block.colour);
+	if (range > 1) {
+		scr_swap_right(block, range);
+	}
+	range = scr_scan_left(block, block.colour);
+	if (range > 1) {
+		scr_swap_left(block, range);
+	}
+} else {
+	range = scr_scan_up(block, block.colour);
+	if (range > 1) {
+		scr_swap_up(block, range);
+	}
+	range = scr_scan_down(block, block.colour);
+	if (range > 1) {
+		scr_swap_down(block, range);
+	}
 }
-range = scr_scan_left(block, block.colour);
-if (range > 1) {
-	scr_swap_left(block, range);
-}
-range = scr_scan_up(block, block.colour);
-if (range > 1) {
-	scr_swap_up(block, range);
-}
-range = scr_scan_down(block, block.colour);
-if (range > 1) {
-	scr_swap_down(block, range);
-}
-scr_uncheck_neighbours(block)
 
 var function evaluate_board(){
 	var popped = false;
@@ -56,7 +59,6 @@ while (evaluate_board()) {
 	var j = global.iheight - 1;
 	repeat(global.width) {
 		repeat(global.height - 1) {
-			show_debug_message(string(i) + "." + string(j));
 			block = play_area[i][j];
 			while (block.colour != block_types.empty and
 			  block.neighbour_bottom and 

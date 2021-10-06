@@ -10,4 +10,5 @@ switch (colour) {
 }
 
 // This is only here for safety
+// TODO: Remove this
 checked = false;
