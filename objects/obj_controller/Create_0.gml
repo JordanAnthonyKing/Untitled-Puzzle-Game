@@ -6,7 +6,8 @@ enum block_types {
 	pink,
 	purple,
 	red,
-	yellow
+	yellow,
+	white // DEBUG
 }
 
 enum cardinals {

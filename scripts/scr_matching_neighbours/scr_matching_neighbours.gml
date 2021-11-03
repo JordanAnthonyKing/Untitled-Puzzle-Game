@@ -5,7 +5,8 @@ function scr_matching_neighbours(block){
 	
 	// left
 	if (block.x_index > 0) {
-		if (block.colour == block.neighbour_left.colour and 
+		if (block.colour != block_types.white and
+			block.colour == block.neighbour_left.colour and 
 			!block.neighbour_left.checked) {
 			total++;
 			total += scr_matching_neighbours(block.neighbour_left);
@@ -13,7 +14,8 @@ function scr_matching_neighbours(block){
 	}
 	// right
 	if (block.x_index < global.iwidth) {
-		if (block.colour == block.neighbour_right.colour and 
+		if (block.colour != block_types.white and
+			block.colour == block.neighbour_right.colour and 
 			!block.neighbour_right.checked) {
 			total++;
 			total += scr_matching_neighbours(block.neighbour_right);
@@ -21,7 +23,8 @@ function scr_matching_neighbours(block){
 	}
 	// top
 	if (block.y_index > 0) {
-		if (block.colour == block.neighbour_top.colour and 
+		if (block.colour != block_types.white and
+			block.colour == block.neighbour_top.colour and 
 			!block.neighbour_top.checked) {
 			total++;
 			total += scr_matching_neighbours(block.neighbour_top);
@@ -29,7 +32,8 @@ function scr_matching_neighbours(block){
 	}
 	// bottom
 	if (block.y_index < global.iheight) {
-		if (block.colour == block.neighbour_bottom.colour and 
+		if (block.colour != block_types.white and
+			block.colour == block.neighbour_bottom.colour and 
 			!block.neighbour_bottom.checked) {
 			total++;
 			total += scr_matching_neighbours(block.neighbour_bottom);

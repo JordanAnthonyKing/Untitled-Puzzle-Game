@@ -39,7 +39,8 @@ var function evaluate_board(){
 				// TODO: Raise this back to 3
 				if (matches >= 2) {
 					popped = true;
-					scr_pop_blocks(block);
+					// scr_pop_blocks(block);
+					scr_highlight_blocks(block);
 					scr_uncheck_neighbours(block);
 				}
 			}
@@ -51,6 +52,7 @@ var function evaluate_board(){
 	
 	return popped;
 }
+
 
 // pop blocks
 while (evaluate_board()) {
@@ -73,7 +75,6 @@ while (evaluate_board()) {
 		i--;
 	}
 }
-
 
 
 

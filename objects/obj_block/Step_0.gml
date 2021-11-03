@@ -7,6 +7,7 @@ switch (colour) {
 	case block_types.purple: sprite_index = spr_block_purple; break;
 	case block_types.red: sprite_index = spr_block_red; break;
 	case block_types.yellow: sprite_index = spr_block_yellow; break;
+	case block_types.white: sprite_index = spr_block_white; break;
 }
 
 // This is only here for safety
